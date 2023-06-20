@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{859F46EF-C470-4A27-BFAD-E8B42939F4BB}|Default">
+  <MonoDevelop.Ide.ItemProperties..NET__UI__Automation__6 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name=".NET_UI_Automation_6" expanded="True">
+            <Node name=".NET_UI_Automation_6" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="scripts" expanded="True">
+                <Node name="HeaderTest.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name=".NET_UI_Automation_6" expanded="True">
+            <Node name=".NET_UI_Automation_6" expanded="True">
+              <Node name="_NET_UI_Automation_6.scripts" expanded="True">
+                <Node name="HeaderTest" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+</Properties>
