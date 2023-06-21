@@ -7,31 +7,8 @@ using OpenQA.Selenium.Interactions;
 namespace _NET_UI_Automation_6.scripts
 {
     [TestFixture]
-    public class HeaderTest
+    public class HeaderTest : BaseTest
     {
-        public static IWebDriver driver;
-
-        // Before - set up actions
-        [SetUp]
-        public void SetUp()
-        {
-            // Set up driver
-            driver = new ChromeDriver();
-            driver.Manage().Window.Maximize();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
-            driver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(30);
-
-            // Navigate to url
-            driver.Navigate().GoToUrl("https://techglobal-training.com/");
-        }
-
-        // After - teardown actions
-        [TearDown]
-        public void TearDown()
-        {
-            // Quit driver
-            driver.Quit();
-        }
 
         [Test] // Like @Test annotation from TestNG
         public void ValidateLogo()
