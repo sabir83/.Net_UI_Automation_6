@@ -1,7 +1,6 @@
-﻿using NUnit.Framework;
-using System;
+﻿using _NET_UI_Automation_6.pages;
+using NUnit.Framework;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Interactions;
 
 namespace _NET_UI_Automation_6.scripts
@@ -10,35 +9,38 @@ namespace _NET_UI_Automation_6.scripts
     public class HeaderTest : BaseTest
     {
 
+        [SetUp]
+        public void SetPage()
+        {
+            basePage = new BasePage();
+        }
+
         [Test] // Like @Test annotation from TestNG
         public void ValidateLogo()
         {
-            // Locate web elements using 8 different locators
-            IWebElement logo = driver.FindElement(By.Id("logo"));
-
+            Thread.Sleep(1000);
             // Assertions
-            Assert.That(logo.Displayed);
+            Assert.That(basePage.logo.Displayed);
         }
 
 
         [Test]
         public void ValidateThePracticesDropdown()
         {
-            IWebElement practicesDropdown = driver.FindElement(By.Id("dropdown-button"));
-            IList<IWebElement> dropdownOptions = driver.FindElements(By.CssSelector("#dropdown-menu a"));
+
 
             string[] expectedTexts = { "Frontend Testing", "Backend Testing", "Java Exercises", "JS Exercises", "Mock Interviews" };
 
-            Assert.That(practicesDropdown.Displayed);
-            Assert.That(practicesDropdown.Text, Is.EqualTo("Practices"));
+            Assert.That(basePage.practicesDropdown.Displayed);
+            Assert.That(basePage.practicesDropdown.Text, Is.EqualTo("Practices"));
 
 
-            Actions actions = new Actions(driver);
-            actions.MoveToElement(practicesDropdown).Perform();
+            
+            actions.MoveToElement(basePage.practicesDropdown).Perform();
 
-            for (int i = 0; i < dropdownOptions.Count; i++)
+            for (int i = 0; i < basePage.dropdownOptions.Count; i++)
             {
-                Assert.That(dropdownOptions[i].Text, Is.EqualTo(expectedTexts[i]));
+                Assert.That(basePage.dropdownOptions[i].Text, Is.EqualTo(expectedTexts[i]));
             }
         }
 

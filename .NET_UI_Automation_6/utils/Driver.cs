@@ -1,5 +1,4 @@
-﻿using System;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
 namespace _NET_UI_Automation_6.utils
@@ -10,7 +9,9 @@ namespace _NET_UI_Automation_6.utils
 
         private Driver()
         {
+
         }
+
         public static IWebDriver GetDriver()
         {
             if (driver == null)
@@ -23,6 +24,7 @@ namespace _NET_UI_Automation_6.utils
             }
             return driver;
         }
+
         public static void QuitDriver()
         {
             if (driver != null)
@@ -33,4 +35,3 @@ namespace _NET_UI_Automation_6.utils
         }
     }
 }
-
