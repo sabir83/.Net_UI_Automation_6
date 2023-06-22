@@ -14,6 +14,7 @@ namespace _NET_UI_Automation_6.scripts
         public Actions actions;
         public BasePage basePage;
         public FrontendTestingPage frontendTestingPage;
+        public MockInterviewsPage mockInterviewsPage;
         // Before - set up actions
         [SetUp]
         public void SetUp()

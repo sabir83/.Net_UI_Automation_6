@@ -8,7 +8,7 @@
             <Node name=".NET_UI_Automation_6" expanded="True">
               <Node name="pages" expanded="True" />
               <Node name="scripts" expanded="True">
-                <Node name="HeaderTest.cs" selected="True" />
+                <Node name="MockInterviewsTest.cs" selected="True" />
               </Node>
               <Node name="utils" expanded="True" />
             </Node>
@@ -17,15 +17,7 @@
       </Pad>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
-          <Node name=".NET_UI_Automation_6" expanded="True">
-            <Node name=".NET_UI_Automation_6" expanded="True">
-              <Node name="_NET_UI_Automation_6.scripts" expanded="True">
-                <Node name="FooterTest" expanded="True" />
-                <Node name="FrontendTestingTest" expanded="True" />
-                <Node name="HeaderTest" expanded="True" />
-              </Node>
-            </Node>
-          </Node>
+          <Node name=".NET_UI_Automation_6" expanded="True" />
         </State>
       </Pad>
     </Pads>
